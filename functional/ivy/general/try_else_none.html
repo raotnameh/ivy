@@ -212,7 +212,10 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="ivy.functional.ivy.general.try_else_none">
 <span class="sig-prename descclassname">ivy.</span></span><span class="sig-name descname"><span class="pre">try_else_none</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/functional/ivy/general.html#try_else_none"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ivy.functional.ivy.general.try_else_none" title="Permalink to this definition"></a></dt>
-<dd><p>Try and return the function, otherwise return None if an exception was raised during function execution.</p>
+<dd><dl class="simple">
+<dt>Try and return the function, otherwise return None</dt><dd><p>if an exception was raised during function execution.</p>
+</dd>
+</dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -237,13 +240,13 @@
 &gt;&gt;&gt; x = ivy.array([1, 2, 3])
 &gt;&gt;&gt; y = ivy.array([4, 5, 6])
 &gt;&gt;&gt; z = ivy.try_else_none(ivy.add,x, y)
-&gt;&gt;&gt; print(y)
+&gt;&gt;&gt; print(z)
 ivy.add</p>
 <p>with: if the function is executed with an exception
 &gt;&gt;&gt; x = ivy.array([1, 2, 3])
 &gt;&gt;&gt; y = ‘hemant’
 &gt;&gt;&gt; z = ivy.try_else_none(ivy.add,x, y)
-&gt;&gt;&gt; print(y)
+&gt;&gt;&gt; print(z)
 None</p>
 </dd></dl>
 
